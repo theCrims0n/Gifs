@@ -7,3 +7,9 @@ html, body{
     min-height: 100vh;
     min-width: 180px;;
 }
+
+a {
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2), 0 4px 18px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    border:aquamarine;
+  }

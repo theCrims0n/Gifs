@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GifsService } from 'src/app/gifs/services/gifs.service';
 
 @Component({
@@ -18,5 +18,15 @@ export class SidebarComponent {
   {
     return this.gifService.historial;
   }
+
+  //Metodo para consultar los datos guardados en el localstore
+  status: boolean = false;
+  buscar(termino : string)
+  {
+    this.status = !this.status;       
+    this.gifService.buscarGifs(termino);
+  }
+
+  
 
 }
